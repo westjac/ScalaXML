@@ -30,7 +30,7 @@ object MainStarterStudent extends App {
             choice = temp.toInt
 
             choice match {
-                case 0 => println("TODO")
+                case 0 => choice = 0;
                 case 1 => println("TODO")
                 case 2 => println("TODO")
                 case 3 => println("TODO")
