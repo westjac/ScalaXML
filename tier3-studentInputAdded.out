@@ -8,48 +8,13 @@
 7) Calculate species
 0) Quit
 Choice:> [34;1m1[0m
- TODO
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mmammalia[0m
- java.lang.NumberFormatException: For input string: "mammalia"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mCarnivora[0m
- java.lang.NumberFormatException: For input string: "Carnivora"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
+ What class:> [34;1mmammalia[0m
+ Added Class
+Continue (y/n):> [34;1my[0m
+ What Order:> [34;1mCarnivora[0m
+ Added Order
+Continue (y/n):> [34;1my[0m
+ 
 1) Add data
 2) Display data
 3) Remove class
@@ -272,8 +237,8 @@ Choice:> [34;1maves.xml[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- TODO
-
+ Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class
@@ -283,28 +248,10 @@ Choice:> [34;1m2[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m1[0m
- TODO
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1maves[0m
- java.lang.NumberFormatException: For input string: "aves"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mgalliforme[0m
- java.lang.NumberFormatException: For input string: "galliforme"
+ What class:> [34;1maves[0m
+ Added Class
+Continue (y/n):> [34;1mgalliforme[0m
+ 
 1) Add data
 2) Display data
 3) Remove class
@@ -396,38 +343,11 @@ Choice:> [34;1mn[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m1[0m
- TODO
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1maves[0m
- java.lang.NumberFormatException: For input string: "aves"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mPasseriformes[0m
- java.lang.NumberFormatException: For input string: "Passeriformes"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
+ What class:> [34;1maves[0m
+ What Order:> [34;1mPasseriformes[0m
+ Added Order
+Continue (y/n):> [34;1my[0m
+ 
 1) Add data
 2) Display data
 3) Remove class
@@ -549,8 +469,8 @@ Choice:> [34;1mn[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- TODO
-
+ Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class
@@ -581,8 +501,8 @@ Choice:> [34;1mmammalia[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- TODO
-
+ Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class
@@ -592,48 +512,13 @@ Choice:> [34;1m2[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m1[0m
- TODO
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mChondrichthyes[0m
- java.lang.NumberFormatException: For input string: "Chondrichthyes"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mCarcharhiniformes[0m
- java.lang.NumberFormatException: For input string: "Carcharhiniformes"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
+ What class:> [34;1mChondrichthyes[0m
+ Added Class
+Continue (y/n):> [34;1my[0m
+ What Order:> [34;1mCarcharhiniformes[0m
+ Added Order
+Continue (y/n):> [34;1my[0m
+ 
 1) Add data
 2) Display data
 3) Remove class
@@ -743,8 +628,8 @@ Choice:> [34;1my[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- TODO
-
+ Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class
@@ -795,8 +680,8 @@ Choice:> [34;1mn[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- TODO
-
+ Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class
@@ -890,8 +775,8 @@ Choice:> [34;1mtier3_Out.xml[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- TODO
-
+ Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class
@@ -901,28 +786,9 @@ Choice:> [34;1m2[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m1[0m
- TODO
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mChondrichthyes[0m
- java.lang.NumberFormatException: For input string: "Chondrichthyes"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mCarcharhiniformes[0m
- java.lang.NumberFormatException: For input string: "Carcharhiniformes"
+ What class:> [34;1mChondrichthyes[0m
+ What Order:> [34;1mCarcharhiniformes[0m
+ 
 1) Add data
 2) Display data
 3) Remove class
@@ -962,8 +828,8 @@ Choice:> [34;1my[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- TODO
-
+ Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class
@@ -1014,8 +880,8 @@ Choice:> [34;1mn[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- TODO
-
+ Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class

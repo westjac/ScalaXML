@@ -7,44 +7,9 @@
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "mammalia"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "Carnivora"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
+Choice:> What class:> Added Class
+Continue (y/n):> What Order:> Added Order
+Continue (y/n):> 
 1) Add data
 2) Display data
 3) Remove class
@@ -226,8 +191,8 @@ Choice:> java.lang.NumberFormatException: For input string: "n"
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
-
+Choice:> Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class
@@ -236,44 +201,9 @@ Choice:> TODO
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "aves"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "galliforme"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
+Choice:> What class:> Added Class
+Continue (y/n):> What Order:> Added Order
+Continue (y/n):> 
 1) Add data
 2) Display data
 3) Remove class
@@ -383,8 +313,8 @@ Choice:> java.lang.NumberFormatException: For input string: "n"
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
-
+Choice:> Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class
@@ -412,8 +342,8 @@ Choice:> java.lang.NumberFormatException: For input string: "aves"
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
-
+Choice:> Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class
@@ -441,8 +371,8 @@ Choice:> java.lang.NumberFormatException: For input string: "nothing"
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
-
+Choice:> Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class
@@ -470,8 +400,8 @@ Choice:> java.lang.NumberFormatException: For input string: "mammalia"
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
-
+Choice:> Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class

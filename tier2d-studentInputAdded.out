@@ -29,8 +29,8 @@ Choice:> [34;1maves.xml[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- TODO
-
+ Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class
@@ -61,8 +61,8 @@ Choice:> [34;1mmammal.xml[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- TODO
-
+ Class: mammalia
+Feature: 
 1) Add data
 2) Display data
 3) Remove class

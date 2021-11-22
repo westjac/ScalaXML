@@ -19,6 +19,9 @@ object MainStarterStudent extends App {
           |0) Quit
           |Choice:> """.stripMargin
 
+    //my initializations
+    var taxonomy = new Taxonomy()
+
     var temp = ""
     while (choice != 0) {
         try {
@@ -30,9 +33,9 @@ object MainStarterStudent extends App {
             choice = temp.toInt
 
             choice match {
-                case 0 => choice = 0;
-                case 1 => println("TODO")
-                case 2 => println("TODO")
+                case 0 => choice = 0
+                case 1 => taxonomy.addData()
+                case 2 => taxonomy.displayData()
                 case 3 => println("TODO")
                 case 4 => println("TODO")
                 case 5 => println("TODO")
