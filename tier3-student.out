@@ -212,6 +212,9 @@ Choice:> java.lang.NumberFormatException: For input string: "aves.xml"
 0) Quit
 Choice:> Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -417,6 +420,13 @@ Choice:> java.lang.NumberFormatException: For input string: "n"
 0) Quit
 Choice:> Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: passeriformes
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -446,6 +456,13 @@ Choice:> java.lang.NumberFormatException: For input string: "mammalia"
 0) Quit
 Choice:> Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: passeriformes
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -557,6 +574,17 @@ Choice:> java.lang.NumberFormatException: For input string: "y"
 0) Quit
 Choice:> Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: passeriformes
+--Feature: 
+Class: chondrichthyes
+Feature: 
+--Order: carcharhiniformes
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -604,6 +632,17 @@ Choice:> java.lang.NumberFormatException: For input string: "n"
 0) Quit
 Choice:> Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: passeriformes
+--Feature: 
+Class: chondrichthyes
+Feature: 
+--Order: carcharhiniformes
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -690,6 +729,17 @@ Choice:> java.lang.NumberFormatException: For input string: "tier3_Out.xml"
 0) Quit
 Choice:> Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: passeriformes
+--Feature: 
+Class: chondrichthyes
+Feature: 
+--Order: carcharhiniformes
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -698,25 +748,8 @@ Feature:
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> What class:> What Order:> 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "Sphyrnidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "n"
+Choice:> What class:> What Order:> What family:> Added Family
+Continue (y/n):> 
 1) Add data
 2) Display data
 3) Remove class
@@ -736,6 +769,19 @@ Choice:> java.lang.NumberFormatException: For input string: "y"
 0) Quit
 Choice:> Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: passeriformes
+--Feature: 
+Class: chondrichthyes
+Feature: 
+--Order: carcharhiniformes
+--Feature: 
+----Family: sphyrnidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 1) Add data
 2) Display data
 3) Remove class
@@ -783,6 +829,19 @@ Choice:> java.lang.NumberFormatException: For input string: "n"
 0) Quit
 Choice:> Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: passeriformes
+--Feature: 
+Class: chondrichthyes
+Feature: 
+--Order: carcharhiniformes
+--Feature: 
+----Family: sphyrnidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 1) Add data
 2) Display data
 3) Remove class

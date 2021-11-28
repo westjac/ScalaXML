@@ -232,8 +232,9 @@ Choice:> java.lang.NumberFormatException: For input string: "n"
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> Class: mammalia
+Choice:> Class: aves
 Feature: 
+
 1) Add data
 2) Display data
 3) Remove class

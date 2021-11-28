@@ -193,6 +193,9 @@ Choice:> java.lang.NumberFormatException: For input string: "n"
 0) Quit
 Choice:> Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -315,6 +318,13 @@ Choice:> java.lang.NumberFormatException: For input string: "n"
 0) Quit
 Choice:> Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: galliforme
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class

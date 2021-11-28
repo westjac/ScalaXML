@@ -239,6 +239,9 @@ Choice:> [34;1maves.xml[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -471,6 +474,13 @@ Choice:> [34;1mn[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: passeriformes
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -503,6 +513,13 @@ Choice:> [34;1mmammalia[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: passeriformes
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -630,6 +647,17 @@ Choice:> [34;1my[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: passeriformes
+--Feature: 
+Class: chondrichthyes
+Feature: 
+--Order: carcharhiniformes
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -682,6 +710,17 @@ Choice:> [34;1mn[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: passeriformes
+--Feature: 
+Class: chondrichthyes
+Feature: 
+--Order: carcharhiniformes
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -777,6 +816,17 @@ Choice:> [34;1mtier3_Out.xml[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: passeriformes
+--Feature: 
+Class: chondrichthyes
+Feature: 
+--Order: carcharhiniformes
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -788,27 +838,10 @@ Feature:
 Choice:> [34;1m1[0m
  What class:> [34;1mChondrichthyes[0m
  What Order:> [34;1mCarcharhiniformes[0m
+ What family:> [34;1mSphyrnidae[0m
+ Added Family
+Continue (y/n):> [34;1mn[0m
  
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mSphyrnidae[0m
- java.lang.NumberFormatException: For input string: "Sphyrnidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
 1) Add data
 2) Display data
 3) Remove class
@@ -830,6 +863,19 @@ Choice:> [34;1my[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: passeriformes
+--Feature: 
+Class: chondrichthyes
+Feature: 
+--Order: carcharhiniformes
+--Feature: 
+----Family: sphyrnidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 1) Add data
 2) Display data
 3) Remove class
@@ -882,6 +928,19 @@ Choice:> [34;1mn[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: passeriformes
+--Feature: 
+Class: chondrichthyes
+Feature: 
+--Order: carcharhiniformes
+--Feature: 
+----Family: sphyrnidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 1) Add data
 2) Display data
 3) Remove class

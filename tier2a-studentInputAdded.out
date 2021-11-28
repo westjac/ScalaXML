@@ -218,6 +218,9 @@ Choice:> [34;1mn[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -357,6 +360,13 @@ Choice:> [34;1mn[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: galliforme
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -389,6 +399,13 @@ Choice:> [34;1maves[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: galliforme
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -421,6 +438,13 @@ Choice:> [34;1mnothing[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: galliforme
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -453,6 +477,13 @@ Choice:> [34;1mmammalia[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+Class: aves
+Feature: 
+--Order: galliforme
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class

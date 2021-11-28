@@ -2,7 +2,7 @@ package west_jacob
 
 import scala.collection.mutable.ListBuffer
 
-abstract class TaxNode {
+abstract class TaxNode() {
   private var nodeName = ""
   var features = new ListBuffer[String]()
 
@@ -10,9 +10,9 @@ abstract class TaxNode {
     nodeName = name
   }
 
-  def getNodeName() : String = return nodeName
+  def getNodeName() : String = nodeName
   def loadFile(): Void
   def saveFile(): Unit
-  def displayInfo(): String
+  def displayInfo(depth: Int): String
   def find() : Unit
 }

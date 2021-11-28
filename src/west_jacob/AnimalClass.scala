@@ -2,20 +2,19 @@ package west_jacob
 
 import scala.collection.mutable.ListBuffer
 
-class AnimalClass extends TaxNode {
+class AnimalClass() extends TaxNode {
   var orders = ListBuffer[Order]()
 
   override def loadFile(): Void = ???
 
   override def saveFile(): Unit = ???
 
-  override def displayInfo(): String = ???
-
   override def find(): Unit = ???
 
   def addData(): Unit = {
     print("What Order:> ")
-    var orderName = io.StdIn.readLine()
+    val input = io.StdIn.readLine()
+    val orderName = input.toLowerCase()
     var newOrder = new Order()
     newOrder.setNodeName(orderName)
 
@@ -26,7 +25,7 @@ class AnimalClass extends TaxNode {
         newOrder = order
       }
     }
-    if(!orderFound) {
+    if(orderFound == false) {
       orders.append(newOrder)
       print("Added Order\n")
       print("Continue (y/n):> ")
@@ -38,12 +37,23 @@ class AnimalClass extends TaxNode {
         //newClass.addData()
     }
     else {
-     // newClass.addData()
+     newOrder.addData()
     }
   }
 
-  def displayData(): Unit = {
-    print("--Order: carnivora\n")
-    print("--Feature: ")
+  override def displayInfo(depth: Int): String = {
+    var info = ""
+    info = info + "Class: " + this.getNodeName() +"\n"
+    info = info + "Feature: "
+    for ( feature <- features) {
+      info = info + feature + " "
+    }
+    info = info + "\n"
+
+    //Recurse down
+    for (order <- orders) {
+      info = info + order.displayInfo(depth + 1)
+    }
+    return info
   }
 }

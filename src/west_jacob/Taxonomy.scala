@@ -1,6 +1,7 @@
 package west_jacob
 
 import scala.collection.mutable.ListBuffer
+import scala.io
 
 class Taxonomy {
   var animalClasses = ListBuffer[AnimalClass]()
@@ -8,9 +9,10 @@ class Taxonomy {
   def addData(): Unit = {
 
     print("What class:> ")
-    var taxClass = io.StdIn.readLine()
-    var newClass = new AnimalClass()
-    newClass.setNodeName(taxClass)
+    val input = io.StdIn.readLine()
+    val taxClass = input.toLowerCase()
+    var newClass: AnimalClass = new AnimalClass()
+    newClass.setNodeName(taxClass.toString)
     //stuff here to add the class to the tree
     var classFound = false
     for(animalClass <- animalClasses) {
@@ -36,7 +38,11 @@ class Taxonomy {
   }
 
   def displayData(): Unit = {
-    print("Class: mammalia\n")
-    print("Feature: ")
+    var data = ""
+    for (animalClass <- animalClasses)
+    {
+      data = data + animalClass.displayInfo(0)
+    }
+    print(data)
   }
 }

@@ -23,6 +23,7 @@ Continue (y/n):> [34;1mn[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -48,6 +49,9 @@ Continue (y/n):> [34;1mn[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -59,19 +63,10 @@ Feature:
 Choice:> [34;1m1[0m
  What class:> [34;1mmammalia[0m
  What Order:> [34;1mCarnivora[0m
- Added Order
-Continue (y/n):> [34;1mcanidae[0m
+ What family:> [34;1mcanidae[0m
+ Added Family
+Continue (y/n):> [34;1mn[0m
  
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
 1) Add data
 2) Display data
 3) Remove class
@@ -83,6 +78,11 @@ Choice:> [34;1mn[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+----Family: canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 1) Add data
 2) Display data
 3) Remove class
@@ -94,57 +94,13 @@ Feature:
 Choice:> [34;1m1[0m
  What class:> [34;1mmammalia[0m
  What Order:> [34;1mCarnivora[0m
+ What family:> [34;1mcanidae[0m
+ Add Feature (y/n):> [34;1mY[0m
+ What Feature:> [34;1mtail[0m
  
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mcanidae[0m
- java.lang.NumberFormatException: For input string: "canidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mY[0m
- java.lang.NumberFormatException: For input string: "Y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mtail[0m
- java.lang.NumberFormatException: For input string: "tail"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
+Add Feature (y/n):> [34;1mn[0m
+ Add Summary (y/n):> [34;1mn[0m
+ 
 1) Add data
 2) Display data
 3) Remove class
@@ -156,6 +112,11 @@ Choice:> [34;1mn[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+----Family: canidae
+----Feature: tail
+------Genus: 0  Species: 0  Examples: 
 1) Add data
 2) Display data
 3) Remove class
@@ -167,77 +128,16 @@ Feature:
 Choice:> [34;1m1[0m
  What class:> [34;1mmammalia[0m
  What Order:> [34;1mCarnivora[0m
+ What family:> [34;1mcanidae[0m
+ Add Feature (y/n):> [34;1mY[0m
+ What Feature:> [34;1mfangs[0m
  
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mcanidae[0m
- java.lang.NumberFormatException: For input string: "canidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mY[0m
- java.lang.NumberFormatException: For input string: "Y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mfangs[0m
- java.lang.NumberFormatException: For input string: "fangs"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mfur[0m
- java.lang.NumberFormatException: For input string: "fur"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
+Add Feature (y/n):> [34;1my[0m
+ What Feature:> [34;1mfur[0m
+ 
+Add Feature (y/n):> [34;1mn[0m
+ Add Summary (y/n):> [34;1mn[0m
+ 
 1) Add data
 2) Display data
 3) Remove class
@@ -249,6 +149,11 @@ Choice:> [34;1mn[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+----Family: canidae
+----Feature: tail, fangs, fur
+------Genus: 0  Species: 0  Examples: 
 1) Add data
 2) Display data
 3) Remove class
@@ -260,37 +165,10 @@ Feature:
 Choice:> [34;1m1[0m
  What class:> [34;1mmammalia[0m
  What Order:> [34;1mCarnivora[0m
+ What family:> [34;1mcanidae[0m
+ Add Feature (y/n):> [34;1mn[0m
+ Add Summary (y/n):> [34;1my[0m
  
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mcanidae[0m
- java.lang.NumberFormatException: For input string: "canidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
 1) Add data
 2) Display data
 3) Remove class
@@ -334,6 +212,11 @@ Choice:> [34;1mn[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+----Family: canidae
+----Feature: tail, fangs, fur
+------Genus: 0  Species: 0  Examples: 
 1) Add data
 2) Display data
 3) Remove class
@@ -345,37 +228,10 @@ Feature:
 Choice:> [34;1m1[0m
  What class:> [34;1mmammalia[0m
  What Order:> [34;1mCarnivora[0m
+ What family:> [34;1mcanidae[0m
+ Add Feature (y/n):> [34;1mn[0m
+ Add Summary (y/n):> [34;1my[0m
  
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mcanidae[0m
- java.lang.NumberFormatException: For input string: "canidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
 1) Add data
 2) Display data
 3) Remove class
@@ -439,6 +295,11 @@ Choice:> [34;1mn[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+----Family: canidae
+----Feature: tail, fangs, fur
+------Genus: 0  Species: 0  Examples: 
 1) Add data
 2) Display data
 3) Remove class
@@ -450,37 +311,10 @@ Feature:
 Choice:> [34;1m1[0m
  What class:> [34;1mmammalia[0m
  What Order:> [34;1mCarnivora[0m
+ What family:> [34;1mcanidae[0m
+ Add Feature (y/n):> [34;1mn[0m
+ Add Summary (y/n):> [34;1my[0m
  
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mcanidae[0m
- java.lang.NumberFormatException: For input string: "canidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
 1) Add data
 2) Display data
 3) Remove class
@@ -492,6 +326,11 @@ Choice:> [34;1my[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+----Family: canidae
+----Feature: tail, fangs, fur
+------Genus: 0  Species: 0  Examples: 
 1) Add data
 2) Display data
 3) Remove class
@@ -564,6 +403,11 @@ Choice:> [34;1mn[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+----Family: canidae
+----Feature: tail, fangs, fur
+------Genus: 0  Species: 0  Examples: 
 1) Add data
 2) Display data
 3) Remove class
@@ -703,6 +547,15 @@ Choice:> [34;1mn[0m
 Choice:> [34;1m2[0m
  Class: mammalia
 Feature: 
+--Order: carnivora
+--Feature: 
+----Family: canidae
+----Feature: tail, fangs, fur
+------Genus: 0  Species: 0  Examples: Class: aves
+Feature: 
+--Order: galliforme
+--Feature: 
+
 1) Add data
 2) Display data
 3) Remove class
