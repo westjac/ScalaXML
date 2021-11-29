@@ -42,6 +42,7 @@ class Taxonomy {
     for (animalClass <- animalClasses)
     {
       data = data + animalClass.displayInfo(0)
+      data = data + "\n"
     }
     print(data)
   }

@@ -20,6 +20,7 @@ Continue (y/n):>
 Choice:> Class: mammalia
 Feature: 
 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -42,6 +43,7 @@ Choice:> Class: mammalia
 Feature: 
 --Order: carnivora
 --Feature: 
+
 
 1) Add data
 2) Display data
@@ -68,6 +70,7 @@ Feature:
 ----Family: canidae
 ----Feature: 
 ------Genus: 0  Species: 0  Examples: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -93,6 +96,7 @@ Feature:
 ----Family: canidae
 ----Feature: tail
 ------Genus: 0  Species: 0  Examples: 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -119,24 +123,6 @@ Feature:
 ----Family: canidae
 ----Feature: tail, fangs, fur
 ------Genus: 0  Species: 0  Examples: 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> What class:> What Order:> What family:> Add Feature (y/n):> Add Summary (y/n):> 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Invalid option
 
 1) Add data
 2) Display data
@@ -146,17 +132,7 @@ Choice:> Invalid option
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> Invalid option
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "n"
+Choice:> What class:> What Order:> What family:> Add Feature (y/n):> Add Summary (y/n):> Update genus count (0):> Update species count (0):> Add example (y/n):> 
 1) Add data
 2) Display data
 3) Remove class
@@ -171,25 +147,7 @@ Feature:
 --Feature: 
 ----Family: canidae
 ----Feature: tail, fangs, fur
-------Genus: 0  Species: 0  Examples: 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> What class:> What Order:> What family:> Add Feature (y/n):> Add Summary (y/n):> 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Invalid option
+------Genus: 12  Species: 27  Examples: 
 
 1) Add data
 2) Display data
@@ -199,35 +157,7 @@ Choice:> Invalid option
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> Invalid option
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "dog"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "n"
+Choice:> What class:> What Order:> What family:> Add Feature (y/n):> Add Summary (y/n):> Update genus count (12):> Update species count (27):> Add example (y/n):> What example:> Add example (y/n):> 
 1) Add data
 2) Display data
 3) Remove class
@@ -242,40 +172,7 @@ Feature:
 --Feature: 
 ----Family: canidae
 ----Feature: tail, fangs, fur
-------Genus: 0  Species: 0  Examples: 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> What class:> What Order:> What family:> Add Feature (y/n):> Add Summary (y/n):> 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Class: mammalia
-Feature: 
---Order: carnivora
---Feature: 
-----Family: canidae
-----Feature: tail, fangs, fur
-------Genus: 0  Species: 0  Examples: 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> TODO
+------Genus: 12  Species: 27  Examples: dog
 
 1) Add data
 2) Display data
@@ -285,43 +182,7 @@ Choice:> TODO
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "wolf"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "coyote"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "n"
+Choice:> What class:> What Order:> What family:> Add Feature (y/n):> Add Summary (y/n):> Update genus count (12):> Update species count (27):> Add example (y/n):> What example:> Add example (y/n):> What example:> Add example (y/n):> 
 1) Add data
 2) Display data
 3) Remove class
@@ -336,7 +197,8 @@ Feature:
 --Feature: 
 ----Family: canidae
 ----Feature: tail, fangs, fur
-------Genus: 0  Species: 0  Examples: 
+------Genus: 2  Species: 7  Examples: dog, wolf, coyote
+
 1) Add data
 2) Display data
 3) Remove class
@@ -347,108 +209,9 @@ Feature:
 0) Quit
 Choice:> What class:> Added Class
 Continue (y/n):> What Order:> Added Order
-Continue (y/n):> 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "phasianidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "feathers"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Invalid option
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Invalid option
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "chicken"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "n"
+Continue (y/n):> What family:> Added Family
+Continue (y/n):> Add Feature (y/n):> What Feature:> 
+Add Feature (y/n):> Add Summary (y/n):> Update genus count (0):> Update species count (0):> Add example (y/n):> What example:> Add example (y/n):> 
 1) Add data
 2) Display data
 3) Remove class
@@ -463,10 +226,14 @@ Feature:
 --Feature: 
 ----Family: canidae
 ----Feature: tail, fangs, fur
-------Genus: 0  Species: 0  Examples: Class: aves
+------Genus: 2  Species: 7  Examples: dog, wolf, coyote
+Class: aves
 Feature: 
 --Order: galliforme
 --Feature: 
+----Family: phasianidae
+----Feature: feathers
+------Genus: 12  Species: 37  Examples: chicken
 
 1) Add data
 2) Display data

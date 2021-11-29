@@ -33,8 +33,7 @@ class AnimalClass() extends TaxNode {
       if (continue == "n")
         return
       else if (continue == "y")
-        return
-        //newClass.addData()
+        newOrder.addData()
     }
     else {
      newOrder.addData()

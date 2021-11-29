@@ -9,25 +9,8 @@
 0) Quit
 Choice:> What class:> Added Class
 Continue (y/n):> What Order:> Added Order
+Continue (y/n):> What family:> Added Family
 Continue (y/n):> 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "canidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "Y"
 1) Add data
 2) Display data
 3) Remove class
@@ -214,6 +197,9 @@ Choice:> Class: mammalia
 Feature: 
 --Order: carnivora
 --Feature: 
+----Family: canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 
 1) Add data
 2) Display data
@@ -308,108 +294,9 @@ Choice:> java.lang.NumberFormatException: For input string: "n"
 7) Calculate species
 0) Quit
 Choice:> What class:> What Order:> Added Order
-Continue (y/n):> 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "Turdidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "omnivore"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Invalid option
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Invalid option
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "blue bird"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "n"
+Continue (y/n):> What family:> Added Family
+Continue (y/n):> Add Feature (y/n):> What Feature:> 
+Add Feature (y/n):> Add Summary (y/n):> Update genus count (0):> Update species count (0):> Add example (y/n):> What example:> Add example (y/n):> 
 1) Add data
 2) Display data
 3) Remove class
@@ -422,10 +309,16 @@ Choice:> Class: mammalia
 Feature: 
 --Order: carnivora
 --Feature: 
+----Family: canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 Class: aves
 Feature: 
 --Order: passeriformes
 --Feature: 
+----Family: turdidae
+----Feature: omnivore
+------Genus: 21  Species: 171  Examples: blue bird
 
 1) Add data
 2) Display data
@@ -458,10 +351,16 @@ Choice:> Class: mammalia
 Feature: 
 --Order: carnivora
 --Feature: 
+----Family: canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 Class: aves
 Feature: 
 --Order: passeriformes
 --Feature: 
+----Family: turdidae
+----Feature: omnivore
+------Genus: 21  Species: 171  Examples: blue bird
 
 1) Add data
 2) Display data
@@ -473,25 +372,8 @@ Feature:
 0) Quit
 Choice:> What class:> Added Class
 Continue (y/n):> What Order:> Added Order
+Continue (y/n):> What family:> Added Family
 Continue (y/n):> 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "Sphyrnidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "Y"
 1) Add data
 2) Display data
 3) Remove class
@@ -576,14 +458,23 @@ Choice:> Class: mammalia
 Feature: 
 --Order: carnivora
 --Feature: 
+----Family: canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 Class: aves
 Feature: 
 --Order: passeriformes
 --Feature: 
+----Family: turdidae
+----Feature: omnivore
+------Genus: 21  Species: 171  Examples: blue bird
 Class: chondrichthyes
 Feature: 
 --Order: carcharhiniformes
 --Feature: 
+----Family: sphyrnidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 
 1) Add data
 2) Display data
@@ -634,14 +525,23 @@ Choice:> Class: mammalia
 Feature: 
 --Order: carnivora
 --Feature: 
+----Family: canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 Class: aves
 Feature: 
 --Order: passeriformes
 --Feature: 
+----Family: turdidae
+----Feature: omnivore
+------Genus: 21  Species: 171  Examples: blue bird
 Class: chondrichthyes
 Feature: 
 --Order: carcharhiniformes
 --Feature: 
+----Family: sphyrnidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 
 1) Add data
 2) Display data
@@ -731,14 +631,23 @@ Choice:> Class: mammalia
 Feature: 
 --Order: carnivora
 --Feature: 
+----Family: canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 Class: aves
 Feature: 
 --Order: passeriformes
 --Feature: 
+----Family: turdidae
+----Feature: omnivore
+------Genus: 21  Species: 171  Examples: blue bird
 Class: chondrichthyes
 Feature: 
 --Order: carcharhiniformes
 --Feature: 
+----Family: sphyrnidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 
 1) Add data
 2) Display data
@@ -748,17 +657,7 @@ Feature:
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> What class:> What Order:> What family:> Added Family
-Continue (y/n):> 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
+Choice:> What class:> What Order:> What family:> Add Feature (y/n):> Add Summary (y/n):> Update genus count (0):> Update species count (0):> Add example (y/n):> What example:> Add example (y/n):> 
 1) Add data
 2) Display data
 3) Remove class
@@ -771,77 +670,24 @@ Choice:> Class: mammalia
 Feature: 
 --Order: carnivora
 --Feature: 
+----Family: canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 Class: aves
 Feature: 
 --Order: passeriformes
 --Feature: 
+----Family: turdidae
+----Feature: omnivore
+------Genus: 21  Species: 171  Examples: blue bird
 Class: chondrichthyes
 Feature: 
 --Order: carcharhiniformes
 --Feature: 
 ----Family: sphyrnidae
 ----Feature: 
-------Genus: 0  Species: 0  Examples: 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Invalid option
+------Genus: 2  Species: 9  Examples: bonnethead shark
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "bonnethead shark"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Class: mammalia
-Feature: 
---Order: carnivora
---Feature: 
-Class: aves
-Feature: 
---Order: passeriformes
---Feature: 
-Class: chondrichthyes
-Feature: 
---Order: carcharhiniformes
---Feature: 
-----Family: sphyrnidae
-----Feature: 
-------Genus: 0  Species: 0  Examples: 
 1) Add data
 2) Display data
 3) Remove class

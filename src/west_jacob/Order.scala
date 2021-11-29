@@ -50,7 +50,6 @@ class Order() extends TaxNode {
       if (continue == "n")
         return
       else if (continue == "y")
-        return
         newFamily.addData()
     }
     else {

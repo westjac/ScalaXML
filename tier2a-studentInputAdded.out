@@ -14,27 +14,10 @@ Continue (y/n):> [34;1my[0m
  What Order:> [34;1mCarnivora[0m
  Added Order
 Continue (y/n):> [34;1my[0m
+ What family:> [34;1mcanidae[0m
+ Added Family
+Continue (y/n):> [34;1mY[0m
  
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mcanidae[0m
- java.lang.NumberFormatException: For input string: "canidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mY[0m
- java.lang.NumberFormatException: For input string: "Y"
 1) Add data
 2) Display data
 3) Remove class
@@ -220,6 +203,9 @@ Choice:> [34;1m2[0m
 Feature: 
 --Order: carnivora
 --Feature: 
+----Family: canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 
 1) Add data
 2) Display data
@@ -236,119 +222,20 @@ Continue (y/n):> [34;1my[0m
  What Order:> [34;1mgalliforme[0m
  Added Order
 Continue (y/n):> [34;1my[0m
+ What family:> [34;1mphasianidae[0m
+ Added Family
+Continue (y/n):> [34;1my[0m
+ Add Feature (y/n):> [34;1my[0m
+ What Feature:> [34;1mfeathers[0m
  
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mphasianidae[0m
- java.lang.NumberFormatException: For input string: "phasianidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mfeathers[0m
- java.lang.NumberFormatException: For input string: "feathers"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1m12[0m
- Invalid option
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1m150[0m
- Invalid option
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mchicken like[0m
- java.lang.NumberFormatException: For input string: "chicken like"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
+Add Feature (y/n):> [34;1mn[0m
+ Add Summary (y/n):> [34;1my[0m
+ Update genus count (0):> [34;1m12[0m
+ Update species count (0):> [34;1m150[0m
+ Add example (y/n):> [34;1my[0m
+ What example:> [34;1mchicken like[0m
+ Add example (y/n):> [34;1mn[0m
+ 
 1) Add data
 2) Display data
 3) Remove class
@@ -362,10 +249,16 @@ Choice:> [34;1m2[0m
 Feature: 
 --Order: carnivora
 --Feature: 
+----Family: canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 Class: aves
 Feature: 
 --Order: galliforme
 --Feature: 
+----Family: phasianidae
+----Feature: feathers
+------Genus: 12  Species: 150  Examples: chicken like
 
 1) Add data
 2) Display data
@@ -401,10 +294,16 @@ Choice:> [34;1m2[0m
 Feature: 
 --Order: carnivora
 --Feature: 
+----Family: canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 Class: aves
 Feature: 
 --Order: galliforme
 --Feature: 
+----Family: phasianidae
+----Feature: feathers
+------Genus: 12  Species: 150  Examples: chicken like
 
 1) Add data
 2) Display data
@@ -440,10 +339,16 @@ Choice:> [34;1m2[0m
 Feature: 
 --Order: carnivora
 --Feature: 
+----Family: canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 Class: aves
 Feature: 
 --Order: galliforme
 --Feature: 
+----Family: phasianidae
+----Feature: feathers
+------Genus: 12  Species: 150  Examples: chicken like
 
 1) Add data
 2) Display data
@@ -479,10 +384,16 @@ Choice:> [34;1m2[0m
 Feature: 
 --Order: carnivora
 --Feature: 
+----Family: canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 Class: aves
 Feature: 
 --Order: galliforme
 --Feature: 
+----Family: phasianidae
+----Feature: feathers
+------Genus: 12  Species: 150  Examples: chicken like
 
 1) Add data
 2) Display data
