@@ -9,7 +9,7 @@ class AnimalClass() extends TaxNode {
 
   override def saveFile(): Unit = ???
 
-  override def find(): Unit = ???
+  override def find(): TaxNode = ???
 
   def addData(): Unit = {
     print("What Order:> ")

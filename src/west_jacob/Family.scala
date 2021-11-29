@@ -23,7 +23,7 @@ class Family() extends TaxNode{
     return info
   }
 
-  override def find(): Unit = ???
+  override def find(): TaxNode = ???
 
   def addData(): Unit = {
     print("Add Feature (y/n):> ")

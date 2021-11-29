@@ -36,7 +36,7 @@ object MainStarterStudent extends App {
                 case 0 => choice = 0
                 case 1 => taxonomy.addData()
                 case 2 => taxonomy.displayData()
-                case 3 => println("TODO")
+                case 3 => taxonomy.removeClass()
                 case 4 => println("TODO")
                 case 5 => println("TODO")
                 case 6 => println("TODO")

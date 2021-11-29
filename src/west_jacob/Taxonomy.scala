@@ -46,4 +46,25 @@ class Taxonomy {
     }
     print(data)
   }
+
+  def removeClass(): Unit = {
+    print("What class:> ")
+    val className = io.StdIn.readLine().toLowerCase()
+
+    var classLoc = -1
+    var classFound: Boolean = false
+    for(animalClass <- animalClasses) {
+      if (animalClass.getNodeName() == className) {
+        classFound = true
+        classLoc = animalClasses.indexOf(animalClass)
+      }
+    }
+      if(classFound) {
+        animalClasses.remove(classLoc)
+        print("Removed " + className + "\n")
+      }
+      else {
+        print("Class not found\n")
+      }
+  }
 }

@@ -24,7 +24,7 @@ class Order() extends TaxNode {
     return info
   }
 
-  override def find(): Unit = ???
+  override def find(): TaxNode = ???
 
 
   def addData(): Unit = {
@@ -46,7 +46,7 @@ class Order() extends TaxNode {
       families.append(newFamily)
       print("Added Family\n")
       print("Continue (y/n):> ")
-      var continue = io.StdIn.readLine()
+      var continue = io.StdIn.readLine().toLowerCase()
       if (continue == "n")
         return
       else if (continue == "y")

@@ -14,5 +14,5 @@ abstract class TaxNode() {
   def loadFile(): Void
   def saveFile(): Unit
   def displayInfo(depth: Int): String
-  def find() : Unit
+  def find() : TaxNode
 }
