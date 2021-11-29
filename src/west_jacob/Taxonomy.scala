@@ -2,6 +2,7 @@ package west_jacob
 
 import scala.collection.mutable.ListBuffer
 import scala.io
+import scala.xml.{Elem, XML}
 
 class Taxonomy {
   var animalClasses = ListBuffer[AnimalClass]()
@@ -66,5 +67,12 @@ class Taxonomy {
       else {
         print("Class not found\n")
       }
+  }
+
+  def writeXML(): Unit = {
+    print("File name:> ")
+    val fileName: String = io.StdIn.readLine()
+    val tree = XMLHelper.makeNode("test") //This is where I need to keep working tomorrow
+    XML.save(fileName, tree, "UTF-8", true, null)
   }
 }

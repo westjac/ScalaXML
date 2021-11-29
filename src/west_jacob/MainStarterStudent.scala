@@ -38,7 +38,7 @@ object MainStarterStudent extends App {
                 case 2 => taxonomy.displayData()
                 case 3 => taxonomy.removeClass()
                 case 4 => println("TODO")
-                case 5 => println("TODO")
+                case 5 => taxonomy.writeXML()
                 case 6 => println("TODO")
                 case 7 => println("TODO")
                 case _ => println("Invalid option")
