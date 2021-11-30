@@ -2,12 +2,30 @@ package west_jacob
 
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
-import scala.xml.Elem
+import scala.xml.{Elem, Node}
 
 class AnimalClass() extends TaxNode {
   var orders = ListBuffer[Order]()
 
-  override def loadFile(): Void = ???
+  override def loadFile(child: Node): Void = {
+    val children = child.child
+    for(child <- children) {
+      var tag = child.label
+      tag match {
+        case "order" =>
+          val orderName = child.attribute("name").getOrElse("").toString
+          val order = new Order()
+          order.setNodeName(orderName)
+          order.loadFile(child)
+          orders.append(order)
+        case "feature" =>
+          val featureName = child.child.mkString("")
+          features.append(featureName)
+        case _ => null
+      }
+    }
+    return null
+  }
 
   override def saveFile(): Elem = {
     val xml = orders.map(order => order.saveFile())
@@ -50,9 +68,7 @@ class AnimalClass() extends TaxNode {
     var info = ""
     info = info + "Class: " + this.getNodeName() +"\n"
     info = info + "Feature: "
-    for ( feature <- features) {
-      info = info + feature + " "
-    }
+    info = info + features.mkString("", ", ", "")
     info = info + "\n"
 
     //Recurse down

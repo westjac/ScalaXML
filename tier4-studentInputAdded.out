@@ -8,18 +8,8 @@
 7) Calculate species
 0) Quit
 Choice:> [34;1m4[0m
- TODO
-
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mfullClean.xml[0m
- java.lang.NumberFormatException: For input string: "fullClean.xml"
+ File name:> [34;1mfullClean.xml[0m
+ 
 1) Add data
 2) Display data
 3) Remove class
@@ -177,8 +167,17 @@ Choice:> [34;1mxyz[0m
 0) Quit
 Choice:> [34;1m1[0m
  What class:> [34;1maves[0m
- Added Class
-Continue (y/n):> [34;1mPasseriformes[0m
+ What Order:> [34;1mPasseriformes[0m
+ Added Order
+Continue (y/n):> [34;1my[0m
+ What family:> [34;1mTurdidae[0m
+ Added Family
+Continue (y/n):> [34;1my[0m
+ Add Feature (y/n):> [34;1my[0m
+ What Feature:> [34;1msings[0m
+ 
+Add Feature (y/n):> [34;1mn[0m
+ Add Summary (y/n):> [34;1mn[0m
  
 1) Add data
 2) Display data
@@ -188,80 +187,50 @@ Continue (y/n):> [34;1mPasseriformes[0m
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mTurdidae[0m
- java.lang.NumberFormatException: For input string: "Turdidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1my[0m
- java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1msings[0m
- java.lang.NumberFormatException: For input string: "sings"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> [34;1mn[0m
- java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
 Choice:> [34;1m2[0m
- Class: aves
-Feature: 
-
+ Class: mammalia
+Feature: Fur
+--Order: Carnivora
+--Feature: 
+----Family: Canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: ----Family: felidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: --Order: Cetacea
+--Feature: 
+----Family: Delphinidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
+Class: aves
+Feature: Feathers, beak
+--Order: galliforme
+--Feature: 
+----Family: phasianidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: --Order: Falconiformes
+--Feature: 
+----Family: Apterygidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: --Order: Struthioniformes
+--Feature: 
+----Family: Apterygidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: ----Family: Dromaiidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: ----Family: Struthionidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: --Order: passeriformes
+--Feature: 
+----Family: turdidae
+----Feature: sings
+------Genus: 0  Species: 0  Examples: 
+Class: Chondrichthyes
+Feature: aquatic, cartilage skeleton, gills
+--Order: Carcharhiniformes
+--Feature: 
+----Family: Sphyrnidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
 
 1) Add data
 2) Display data

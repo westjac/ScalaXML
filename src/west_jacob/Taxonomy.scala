@@ -78,4 +78,38 @@ class Taxonomy {
     XML.save(fileName, tree, "UTF-8", true, null)
 
   }
+
+  def loadXML(): Unit = {
+    print("File name:> ")
+    val fileName = io.StdIn.readLine()
+
+    val topNode = XML.loadFile(fileName)
+    if(topNode.label != "taxonomy") {
+      println("Invalid XML File")
+    }
+    else {
+      val children = topNode.child
+      for(child <- children) {
+        var tag = child.label
+        tag match {
+          case "class" =>
+            val className = child.attribute("name").getOrElse("").toString
+            val animalClass = new AnimalClass()
+            animalClass.setNodeName(className)
+            animalClass.loadFile(child)
+            animalClasses.append(animalClass)
+          case _ => null
+        }
+      }
+    }
+
+//    var owner: PetsFunctional = null
+//    val topNode = XML.loadFile(name) //XML.loadFile will read in the DOM tree
+//    if (topNode.label != "pets") { //.label is the "tag"
+//      println("invalid xml file")
+//    } else {
+//      owner = PetsFunctional(topNode)
+//    }
+//    return owner
+  }
 }

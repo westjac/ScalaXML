@@ -16,7 +16,16 @@ Choice:>
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
+Choice:> File name:> java.io.FileNotFoundException: doesNotExist.xml (The system cannot find the file specified)
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> File name:> Invalid XML File
 
 1) Add data
 2) Display data
@@ -26,7 +35,7 @@ Choice:> TODO
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "doesNotExist.xml"
+Choice:> File name:> 
 1) Add data
 2) Display data
 3) Remove class
@@ -35,45 +44,29 @@ Choice:> java.lang.NumberFormatException: For input string: "doesNotExist.xml"
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> TODO
+Choice:> Class: mammal
+Feature: Fur
+--Order: Carnivora
+--Feature: 
+----Family: Canidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: ----Family: felidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: --Order: Cetacea
+--Feature: 
+----Family: Delphinidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: --Order: Struthioniformes
+--Feature: 
+--Order: Falconiformes
+--Feature: 
+----Family: Apterygidae
+----Feature: 
+------Genus: 0  Species: 0  Examples: 
+Class: aves
+Feature: 
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "singleBad.xml"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> TODO
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "messy.xml"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> 
 1) Add data
 2) Display data
 3) Remove class

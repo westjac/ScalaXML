@@ -2,11 +2,26 @@ package west_jacob
 
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
-import scala.xml.{Elem, Text}
+import scala.xml.{Elem, Node, Text}
 
 class Order() extends TaxNode {
   var families = ListBuffer[Family]()
-  override def loadFile(): Void = ???
+  override def loadFile(child: Node): Void = {
+    val children = child.child
+    for(child <- children) {
+      var tag = child.label
+      tag match {
+        case "family" =>
+          val familyName = child.attribute("name").getOrElse("").toString
+          val family = new Family()
+          family.setNodeName(familyName)
+          family.loadFile(child)
+          families.append(family)
+        case _ => null
+      }
+    }
+    return null
+  }
 
   override def saveFile(): Elem = {
     val xml = families.map(family => family.saveFile())
@@ -15,7 +30,7 @@ class Order() extends TaxNode {
     for(feature <- features) {
       xml.append(XMLHelper.makeNode("Feature", null, Text(feature)))
     }
-    XMLHelper.makeNode("Family", nodeName, xml)
+    XMLHelper.makeNode("Order", nodeName, xml)
   }
 
   override def displayInfo(depth: Int): String = {
