@@ -72,7 +72,10 @@ class Taxonomy {
   def writeXML(): Unit = {
     print("File name:> ")
     val fileName: String = io.StdIn.readLine()
-    val tree = XMLHelper.makeNode("test") //This is where I need to keep working tomorrow
+
+    val xml = animalClasses.map(animalClass => animalClass.saveFile())
+    val tree = XMLHelper.makeNode("Taxonomy", null, xml)
     XML.save(fileName, tree, "UTF-8", true, null)
+
   }
 }

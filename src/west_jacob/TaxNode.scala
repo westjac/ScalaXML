@@ -1,6 +1,7 @@
 package west_jacob
 
 import scala.collection.mutable.ListBuffer
+import scala.xml.Elem
 
 abstract class TaxNode() {
   private var nodeName = ""
@@ -12,7 +13,7 @@ abstract class TaxNode() {
 
   def getNodeName() : String = nodeName
   def loadFile(): Void
-  def saveFile(): Unit
+  def saveFile(): Elem
   def displayInfo(depth: Int): String
   def find() : TaxNode
 }

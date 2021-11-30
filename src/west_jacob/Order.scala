@@ -1,12 +1,22 @@
 package west_jacob
 
+import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
+import scala.xml.{Elem, Text}
 
 class Order() extends TaxNode {
   var families = ListBuffer[Family]()
   override def loadFile(): Void = ???
 
-  override def saveFile(): Unit = ???
+  override def saveFile(): Elem = {
+    val xml = families.map(family => family.saveFile())
+    val nodeName = mutable.HashMap(("Name", this.getNodeName()))
+
+    for(feature <- features) {
+      xml.append(XMLHelper.makeNode("Feature", null, Text(feature)))
+    }
+    XMLHelper.makeNode("Family", nodeName, xml)
+  }
 
   override def displayInfo(depth: Int): String = {
     var info = ""

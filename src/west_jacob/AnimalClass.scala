@@ -1,13 +1,19 @@
 package west_jacob
 
+import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
+import scala.xml.Elem
 
 class AnimalClass() extends TaxNode {
   var orders = ListBuffer[Order]()
 
   override def loadFile(): Void = ???
 
-  override def saveFile(): Unit = ???
+  override def saveFile(): Elem = {
+    val xml = orders.map(order => order.saveFile())
+    val nodeName = mutable.HashMap(("Name", this.getNodeName()))
+    XMLHelper.makeNode("Class", nodeName, xml)
+  }
 
   override def find(): TaxNode = ???
 

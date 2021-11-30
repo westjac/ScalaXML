@@ -1,13 +1,27 @@
 package west_jacob
 
+import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
+import scala.xml.{Elem, NodeSeq, Text}
 
 class Family() extends TaxNode{
   var summary = new Summary()
 
   override def loadFile(): Void = ???
 
-  override def saveFile(): Unit = ???
+  override def saveFile(): Elem = {
+    var xmlNodes = ListBuffer[Elem]()
+    val nodeName = mutable.HashMap(("Name", this.getNodeName()))
+
+    for(feature <- features) {
+      xmlNodes.append(XMLHelper.makeNode("Feature", null, Text(feature)))
+    }
+
+    val xmlSummary = mutable.HashMap(("Genus", summary.genusCount.toString), ("Species", summary.speciesCount.toString))
+    xmlNodes.append(XMLHelper.makeNode("Summary", xmlSummary, Text(summary.examples.mkString("", ", ", ""))))
+
+    XMLHelper.makeNode("Class", nodeName, xmlNodes)
+  }
 
   override def displayInfo(depth: Int): String = {
     var info = ""
