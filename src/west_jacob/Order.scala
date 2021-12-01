@@ -6,6 +6,7 @@ import scala.xml.{Elem, Node, Text}
 
 class Order() extends TaxNode {
   var families = ListBuffer[Family]()
+
   override def loadFile(child: Node): Void = {
     val children = child.child
     for(child <- children) {
@@ -17,6 +18,9 @@ class Order() extends TaxNode {
           family.setNodeName(familyName)
           family.loadFile(child)
           families.append(family)
+        case "feature" =>
+          val featureName = child.child.mkString("")
+          features.append(featureName)
         case _ => null
       }
     }
@@ -37,9 +41,8 @@ class Order() extends TaxNode {
     var info = ""
     info = info + ("--"*depth) + "Order: " + this.getNodeName() + "\n"
     info = info + ("--"*depth) + "Feature: "
-    for (feature <- features) {
-      info = info + feature + " "
-    }
+    info = info + features.mkString("", ", ", "")
+
     info = info + "\n"
     //Recurse down
         for (family <- families) {

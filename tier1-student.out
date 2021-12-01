@@ -71,6 +71,7 @@ Feature:
 ----Feature: 
 ------Genus: 0  Species: 0  Examples: 
 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -96,6 +97,7 @@ Feature:
 ----Family: canidae
 ----Feature: tail
 ------Genus: 0  Species: 0  Examples: 
+
 
 1) Add data
 2) Display data
@@ -124,6 +126,7 @@ Feature:
 ----Feature: tail, fangs, fur
 ------Genus: 0  Species: 0  Examples: 
 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -148,6 +151,7 @@ Feature:
 ----Family: canidae
 ----Feature: tail, fangs, fur
 ------Genus: 12  Species: 27  Examples: 
+
 
 1) Add data
 2) Display data
@@ -174,6 +178,7 @@ Feature:
 ----Feature: tail, fangs, fur
 ------Genus: 12  Species: 27  Examples: dog
 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -198,6 +203,7 @@ Feature:
 ----Family: canidae
 ----Feature: tail, fangs, fur
 ------Genus: 2  Species: 7  Examples: dog, wolf, coyote
+
 
 1) Add data
 2) Display data
@@ -227,6 +233,7 @@ Feature:
 ----Family: canidae
 ----Feature: tail, fangs, fur
 ------Genus: 2  Species: 7  Examples: dog, wolf, coyote
+
 Class: aves
 Feature: 
 --Order: galliforme
@@ -234,6 +241,7 @@ Feature:
 ----Family: phasianidae
 ----Feature: feathers
 ------Genus: 12  Species: 37  Examples: chicken
+
 
 1) Add data
 2) Display data

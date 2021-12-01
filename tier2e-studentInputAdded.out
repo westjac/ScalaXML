@@ -42,7 +42,7 @@ Choice:> [34;1m4[0m
 0) Quit
 Choice:> [34;1m4[0m
  File name:> [34;1mmessy.xml[0m
- 
+ java.lang.NumberFormatException: For input string: ""
 1) Add data
 2) Display data
 3) Remove class
@@ -52,29 +52,7 @@ Choice:> [34;1m4[0m
 7) Calculate species
 0) Quit
 Choice:> [34;1m2[0m
- Class: mammal
-Feature: Fur
---Order: Carnivora
---Feature: 
-----Family: Canidae
-----Feature: 
-------Genus: 0  Species: 0  Examples: ----Family: felidae
-----Feature: 
-------Genus: 0  Species: 0  Examples: --Order: Cetacea
---Feature: 
-----Family: Delphinidae
-----Feature: 
-------Genus: 0  Species: 0  Examples: --Order: Struthioniformes
---Feature: 
---Order: Falconiformes
---Feature: 
-----Family: Apterygidae
-----Feature: 
-------Genus: 0  Species: 0  Examples: 
-Class: aves
-Feature: 
-
-
+ 
 1) Add data
 2) Display data
 3) Remove class

@@ -8,6 +8,20 @@ class Family() extends TaxNode{
   var summary = new Summary()
 
   override def loadFile(child: Node): Void = {
+    val children = child.child
+    for(child <- children) {
+      var tag = child.label
+      tag match {
+        case "feature" =>
+          val featureName = child.child.mkString("")
+          features.append(featureName)
+        case "summary" =>
+          summary.genusCount = child.attribute("genus").getOrElse("").toString.toInt
+          summary.speciesCount = child.attribute("species").getOrElse("").toString.toInt
+          summary.examples = child.child.mkString("").split(',').map(_.trim).to[ListBuffer]
+        case _ => null
+      }
+    }
     return null
   }
 
@@ -34,7 +48,7 @@ class Family() extends TaxNode{
     info = info + ("--"*(depth+1)) + "Genus: " + summary.genusCount.toString + "  Species: " + summary.speciesCount.toString + "  Examples: "
 
     //Print the summary
-    info = info + summary.examples.mkString("", ", ", "")
+    info = info + summary.examples.mkString("", ", ", "") + "\n"
 
     return info
   }

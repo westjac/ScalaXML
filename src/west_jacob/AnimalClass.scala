@@ -2,7 +2,7 @@ package west_jacob
 
 import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
-import scala.xml.{Elem, Node}
+import scala.xml.{Elem, Node, Text}
 
 class AnimalClass() extends TaxNode {
   var orders = ListBuffer[Order]()
@@ -30,6 +30,11 @@ class AnimalClass() extends TaxNode {
   override def saveFile(): Elem = {
     val xml = orders.map(order => order.saveFile())
     val nodeName = mutable.HashMap(("Name", this.getNodeName()))
+
+    for(feature <- features) {
+      xml.append(XMLHelper.makeNode("Feature", null, Text(feature)))
+    }
+
     XMLHelper.makeNode("Class", nodeName, xml)
   }
 

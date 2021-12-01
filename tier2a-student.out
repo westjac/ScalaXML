@@ -30,6 +30,7 @@ Feature:
 ----Feature: tail, fangs, fur
 ------Genus: 12  Species: 27  Examples: dog, wolf, coyote
 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -58,6 +59,7 @@ Feature:
 ----Family: canidae
 ----Feature: tail, fangs, fur
 ------Genus: 12  Species: 27  Examples: dog, wolf, coyote
+
 Class: aves
 Feature: 
 --Order: galliforme
@@ -65,6 +67,7 @@ Feature:
 ----Family: phasianidae
 ----Feature: feathers
 ------Genus: 12  Species: 150  Examples: chicken like
+
 
 1) Add data
 2) Display data
@@ -92,6 +95,7 @@ Feature:
 ----Feature: tail, fangs, fur
 ------Genus: 12  Species: 27  Examples: dog, wolf, coyote
 
+
 1) Add data
 2) Display data
 3) Remove class
@@ -117,6 +121,7 @@ Feature:
 ----Family: canidae
 ----Feature: tail, fangs, fur
 ------Genus: 12  Species: 27  Examples: dog, wolf, coyote
+
 
 1) Add data
 2) Display data
