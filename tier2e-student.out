@@ -51,22 +51,22 @@ Feature: Fur
 --Feature: carnivore
 ----Family: Canidae
 ----Feature: Fangs, Tail
-------Genus: 12  Species: 0  Examples: Dog, Wolf, Coyote
+------genus: 12  species: 0  Examples: Dog, Wolf, Coyote
 ----Family: felidae
 ----Feature: 
-------Genus: 0  Species: 0  Examples: 
+------genus: 0  species: 0  Examples: 
 --Order: Cetacea
 --Feature: 
 ----Family: Delphinidae
 ----Feature: 
-------Genus: 17  Species: 32  Examples: 
+------genus: 17  species: 32  Examples: 
 --Order: Struthioniformes
 --Feature: 
 --Order: Falconiformes
 --Feature: diurnal, carnivore
 ----Family: Apterygidae
 ----Feature: 
-------Genus: 0  Species: 0  Examples: 
+------genus: 0  species: 0  Examples: 
 
 Class: aves
 Feature: 

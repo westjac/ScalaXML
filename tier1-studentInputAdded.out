@@ -84,7 +84,7 @@ Feature:
 --Feature: 
 ----Family: canidae
 ----Feature: 
-------Genus: 0  Species: 0  Examples: 
+------genus: 0  species: 0  Examples: 
 
 
 1) Add data
@@ -120,7 +120,7 @@ Feature:
 --Feature: 
 ----Family: canidae
 ----Feature: tail
-------Genus: 0  Species: 0  Examples: 
+------genus: 0  species: 0  Examples: 
 
 
 1) Add data
@@ -159,7 +159,7 @@ Feature:
 --Feature: 
 ----Family: canidae
 ----Feature: tail, fangs, fur
-------Genus: 0  Species: 0  Examples: 
+------genus: 0  species: 0  Examples: 
 
 
 1) Add data
@@ -195,7 +195,7 @@ Feature:
 --Feature: 
 ----Family: canidae
 ----Feature: tail, fangs, fur
-------Genus: 12  Species: 27  Examples: 
+------genus: 12  species: 27  Examples: 
 
 
 1) Add data
@@ -233,7 +233,7 @@ Feature:
 --Feature: 
 ----Family: canidae
 ----Feature: tail, fangs, fur
-------Genus: 12  Species: 27  Examples: dog
+------genus: 12  species: 27  Examples: dog
 
 
 1) Add data
@@ -273,7 +273,7 @@ Feature:
 --Feature: 
 ----Family: canidae
 ----Feature: tail, fangs, fur
-------Genus: 2  Species: 7  Examples: dog, wolf, coyote
+------genus: 2  species: 7  Examples: dog, wolf, coyote
 
 
 1) Add data
@@ -320,7 +320,7 @@ Feature:
 --Feature: 
 ----Family: canidae
 ----Feature: tail, fangs, fur
-------Genus: 2  Species: 7  Examples: dog, wolf, coyote
+------genus: 2  species: 7  Examples: dog, wolf, coyote
 
 Class: aves
 Feature: 
@@ -328,7 +328,7 @@ Feature:
 --Feature: 
 ----Family: phasianidae
 ----Feature: feathers
-------Genus: 12  Species: 37  Examples: chicken
+------genus: 12  species: 37  Examples: chicken
 
 
 1) Add data

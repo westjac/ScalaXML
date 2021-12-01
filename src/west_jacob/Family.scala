@@ -10,14 +10,16 @@ class Family() extends TaxNode{
   override def loadFile(child: Node): Void = {
     val children = child.child
     for(child <- children) {
-      var tag = child.label
+      var tag = child.label.toLowerCase()
       tag match {
         case "feature" =>
           val featureName = child.child.mkString("")
           features.append(featureName)
         case "summary" =>
           val genusCount = child.attribute("genus").getOrElse("").toString
-          summary.genusCount = if(genusCount.forall(Character.isDigit)) genusCount.toInt else 0
+          summary.genusCount =
+            if(genusCount.isEmpty) 0
+            else genusCount.toInt
           val speciesCount = child.attribute("species").getOrElse("").toString
           summary.speciesCount =
             if(speciesCount.isEmpty) 0
@@ -31,13 +33,13 @@ class Family() extends TaxNode{
 
   override def saveFile(): Elem = {
     var xmlNodes = ListBuffer[Elem]()
-    val nodeName = mutable.HashMap(("Name", this.getNodeName()))
+    val nodeName = mutable.HashMap(("name", this.getNodeName()))
 
     for(feature <- features) {
       xmlNodes.append(XMLHelper.makeNode("Feature", null, Text(feature)))
     }
 
-    val xmlSummary = mutable.HashMap(("Genus", summary.genusCount.toString), ("Species", summary.speciesCount.toString))
+    val xmlSummary = mutable.HashMap(("genus", summary.genusCount.toString), ("species", summary.speciesCount.toString))
     xmlNodes.append(XMLHelper.makeNode("Summary", xmlSummary, Text(summary.examples.mkString("", ", ", ""))))
 
     XMLHelper.makeNode("Family", nodeName, xmlNodes)
@@ -49,7 +51,7 @@ class Family() extends TaxNode{
     info = info + ("--"*depth) + "Feature: " + features.mkString("", ", ", "")
 
     info = info + "\n"
-    info = info + ("--"*(depth+1)) + "Genus: " + summary.genusCount.toString + "  Species: " + summary.speciesCount.toString + "  Examples: "
+    info = info + ("--"*(depth+1)) + "genus: " + summary.genusCount.toString + "  species: " + summary.speciesCount.toString + "  Examples: "
 
     //Print the summary
     info = info + summary.examples.mkString("", ", ", "") + "\n"

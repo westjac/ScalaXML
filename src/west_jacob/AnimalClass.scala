@@ -10,17 +10,17 @@ class AnimalClass() extends TaxNode {
   override def loadFile(child: Node): Void = {
     val children = child.child
     for(child <- children) {
-      var tag = child.label
+      var tag = child.label.toLowerCase()
       tag match {
+        case "feature" =>
+          val featureName = child.child.mkString("")
+          features.append(featureName)
         case "order" =>
           val orderName = child.attribute("name").getOrElse("").toString
           val order = new Order()
           order.setNodeName(orderName)
           order.loadFile(child)
           orders.append(order)
-        case "feature" =>
-          val featureName = child.child.mkString("")
-          features.append(featureName)
         case _ => null
       }
     }
@@ -28,13 +28,16 @@ class AnimalClass() extends TaxNode {
   }
 
   override def saveFile(): Elem = {
-    val xml = orders.map(order => order.saveFile())
-    val nodeName = mutable.HashMap(("Name", this.getNodeName()))
+    var xml = ListBuffer[Elem]()
 
     for(feature <- features) {
       xml.append(XMLHelper.makeNode("Feature", null, Text(feature)))
     }
 
+    val nodeName = mutable.HashMap(("name", this.getNodeName()))
+    val orderXML = orders.map(order => order.saveFile())
+
+    xml = xml ++ orderXML
     XMLHelper.makeNode("Class", nodeName, xml)
   }
 

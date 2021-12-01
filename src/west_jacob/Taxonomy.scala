@@ -88,13 +88,13 @@ class Taxonomy {
 
 
       val topNode = XML.loadFile(fileName)
-      if (topNode.label != "taxonomy") {
+      if (topNode.label.toLowerCase() != "taxonomy") {
         println("Invalid XML file. Needs to be an taxonomy XML file")
       }
       else {
         val children = topNode.child
         for (child <- children) {
-          var tag = child.label
+          var tag = child.label.toLowerCase()
           tag match {
             case "class" =>
               val className = child.attribute("name").getOrElse("").toString

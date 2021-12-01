@@ -37,7 +37,7 @@ Feature:
 --Feature: 
 ----Family: canidae
 ----Feature: tail, fangs, fur
-------Genus: 12  Species: 27  Examples: dog, wolf, coyote
+------genus: 12  species: 27  Examples: dog, wolf, coyote
 
 Class: aves
 Feature: Feathers, beak
@@ -45,23 +45,23 @@ Feature: Feathers, beak
 --Feature: chicken-like, ground feeder
 ----Family: phasianidae
 ----Feature: terrestrial
-------Genus: 12  Species: 150  Examples: Turkeys, Chickens, Quails
+------genus: 12  species: 150  Examples: Turkeys, Chickens, Quails
 --Order: Falconiformes
 --Feature: diurnal, carnivore
 ----Family: Apterygidae
 ----Feature: small
-------Genus: 67  Species: 233  Examples: Eagle, Hawk, Kites
+------genus: 67  species: 233  Examples: Eagle, Hawk, Kites
 --Order: Struthioniformes
 --Feature: flightless, omnivore, three-toed
 ----Family: Apterygidae
 ----Feature: small
-------Genus: 1  Species: 5  Examples: Kiwi
+------genus: 1  species: 5  Examples: Kiwi
 ----Family: Dromaiidae
 ----Feature: tail-less
-------Genus: 1  Species: 1  Examples: Emu
+------genus: 1  species: 1  Examples: Emu
 ----Family: Struthionidae
 ----Feature: large
-------Genus: 1  Species: 2  Examples: Ostrich
+------genus: 1  species: 2  Examples: Ostrich
 
 
 1) Add data
@@ -99,7 +99,7 @@ Feature:
 --Feature: 
 ----Family: canidae
 ----Feature: tail, fangs, fur
-------Genus: 12  Species: 27  Examples: dog, wolf, coyote
+------genus: 12  species: 27  Examples: dog, wolf, coyote
 
 Class: aves
 Feature: Feathers, beak
@@ -107,28 +107,28 @@ Feature: Feathers, beak
 --Feature: chicken-like, ground feeder
 ----Family: phasianidae
 ----Feature: terrestrial
-------Genus: 12  Species: 151  Examples: Turkeys, Chickens, Quails, pheasant
+------genus: 12  species: 151  Examples: Turkeys, Chickens, Quails, pheasant
 --Order: Falconiformes
 --Feature: diurnal, carnivore
 ----Family: Apterygidae
 ----Feature: small
-------Genus: 67  Species: 233  Examples: Eagle, Hawk, Kites
+------genus: 67  species: 233  Examples: Eagle, Hawk, Kites
 --Order: Struthioniformes
 --Feature: flightless, omnivore, three-toed
 ----Family: Apterygidae
 ----Feature: small
-------Genus: 1  Species: 5  Examples: Kiwi
+------genus: 1  species: 5  Examples: Kiwi
 ----Family: Dromaiidae
 ----Feature: tail-less
-------Genus: 1  Species: 1  Examples: Emu
+------genus: 1  species: 1  Examples: Emu
 ----Family: Struthionidae
 ----Feature: large
-------Genus: 1  Species: 2  Examples: Ostrich
+------genus: 1  species: 2  Examples: Ostrich
 --Order: passeriformes
 --Feature: 
 ----Family: turdidae
 ----Feature: omnivore
-------Genus: 21  Species: 171  Examples: blue bird
+------genus: 21  species: 171  Examples: blue bird
 
 
 1) Add data
@@ -155,28 +155,28 @@ Feature: Feathers, beak
 --Feature: chicken-like, ground feeder
 ----Family: phasianidae
 ----Feature: terrestrial
-------Genus: 12  Species: 151  Examples: Turkeys, Chickens, Quails, pheasant
+------genus: 12  species: 151  Examples: Turkeys, Chickens, Quails, pheasant
 --Order: Falconiformes
 --Feature: diurnal, carnivore
 ----Family: Apterygidae
 ----Feature: small
-------Genus: 67  Species: 233  Examples: Eagle, Hawk, Kites
+------genus: 67  species: 233  Examples: Eagle, Hawk, Kites
 --Order: Struthioniformes
 --Feature: flightless, omnivore, three-toed
 ----Family: Apterygidae
 ----Feature: small
-------Genus: 1  Species: 5  Examples: Kiwi
+------genus: 1  species: 5  Examples: Kiwi
 ----Family: Dromaiidae
 ----Feature: tail-less
-------Genus: 1  Species: 1  Examples: Emu
+------genus: 1  species: 1  Examples: Emu
 ----Family: Struthionidae
 ----Feature: large
-------Genus: 1  Species: 2  Examples: Ostrich
+------genus: 1  species: 2  Examples: Ostrich
 --Order: passeriformes
 --Feature: 
 ----Family: turdidae
 ----Feature: omnivore
-------Genus: 21  Species: 171  Examples: blue bird
+------genus: 21  species: 171  Examples: blue bird
 
 
 1) Add data
@@ -208,28 +208,28 @@ Feature: Feathers, beak
 --Feature: chicken-like, ground feeder
 ----Family: phasianidae
 ----Feature: terrestrial
-------Genus: 12  Species: 151  Examples: Turkeys, Chickens, Quails, pheasant
+------genus: 12  species: 151  Examples: Turkeys, Chickens, Quails, pheasant
 --Order: Falconiformes
 --Feature: diurnal, carnivore
 ----Family: Apterygidae
 ----Feature: small
-------Genus: 67  Species: 233  Examples: Eagle, Hawk, Kites
+------genus: 67  species: 233  Examples: Eagle, Hawk, Kites
 --Order: Struthioniformes
 --Feature: flightless, omnivore, three-toed
 ----Family: Apterygidae
 ----Feature: small
-------Genus: 1  Species: 5  Examples: Kiwi
+------genus: 1  species: 5  Examples: Kiwi
 ----Family: Dromaiidae
 ----Feature: tail-less
-------Genus: 1  Species: 1  Examples: Emu
+------genus: 1  species: 1  Examples: Emu
 ----Family: Struthionidae
 ----Feature: large
-------Genus: 1  Species: 2  Examples: Ostrich
+------genus: 1  species: 2  Examples: Ostrich
 --Order: passeriformes
 --Feature: 
 ----Family: turdidae
 ----Feature: omnivore
-------Genus: 21  Species: 171  Examples: blue bird
+------genus: 21  species: 171  Examples: blue bird
 
 Class: chondrichthyes
 Feature: 
@@ -237,7 +237,7 @@ Feature:
 --Feature: 
 ----Family: sphyrnidae
 ----Feature: dorsal fin, gills, carnivore
-------Genus: 2  Species: 9  Examples: hammerhead shark
+------genus: 2  species: 9  Examples: hammerhead shark
 
 
 1) Add data
@@ -277,64 +277,51 @@ Choice:> What class:> Removed aves
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> File name:> Invalid XML file. Needs to be an taxonomy XML file
+Choice:> File name:> 
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> Class: aves
+Feature: Feathers, beak
+--Order: galliforme
+--Feature: chicken-like, ground feeder
+----Family: phasianidae
+----Feature: terrestrial
+------genus: 12  species: 151  Examples: Turkeys, Chickens, Quails, pheasant
+--Order: Falconiformes
+--Feature: diurnal, carnivore
+----Family: Apterygidae
+----Feature: small
+------genus: 67  species: 233  Examples: Eagle, Hawk, Kites
+--Order: Struthioniformes
+--Feature: flightless, omnivore, three-toed
+----Family: Apterygidae
+----Feature: small
+------genus: 1  species: 5  Examples: Kiwi
+----Family: Dromaiidae
+----Feature: tail-less
+------genus: 1  species: 1  Examples: Emu
+----Family: Struthionidae
+----Feature: large
+------genus: 1  species: 2  Examples: Ostrich
+--Order: passeriformes
+--Feature: 
+----Family: turdidae
+----Feature: omnivore
+------genus: 21  species: 171  Examples: blue bird
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> What class:> Added Class
-Continue (y/n):> 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "Sphyrnidae"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Class: chondrichthyes
+Class: chondrichthyes
 Feature: 
+--Order: carcharhiniformes
+--Feature: 
+----Family: sphyrnidae
+----Feature: dorsal fin, gills, carnivore
+------genus: 2  species: 9  Examples: hammerhead shark
 
 
 1) Add data
@@ -345,45 +332,51 @@ Feature:
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> Invalid option
+Choice:> What class:> What Order:> What family:> Add Feature (y/n):> Add Summary (y/n):> Update genus count (2):> Update species count (9):> Add example (y/n):> What example:> Add example (y/n):> 
+1) Add data
+2) Display data
+3) Remove class
+4) Load XML
+5) Write XML
+6) Find feature
+7) Calculate species
+0) Quit
+Choice:> Class: aves
+Feature: Feathers, beak
+--Order: galliforme
+--Feature: chicken-like, ground feeder
+----Family: phasianidae
+----Feature: terrestrial
+------genus: 12  species: 151  Examples: Turkeys, Chickens, Quails, pheasant
+--Order: Falconiformes
+--Feature: diurnal, carnivore
+----Family: Apterygidae
+----Feature: small
+------genus: 67  species: 233  Examples: Eagle, Hawk, Kites
+--Order: Struthioniformes
+--Feature: flightless, omnivore, three-toed
+----Family: Apterygidae
+----Feature: small
+------genus: 1  species: 5  Examples: Kiwi
+----Family: Dromaiidae
+----Feature: tail-less
+------genus: 1  species: 1  Examples: Emu
+----Family: Struthionidae
+----Feature: large
+------genus: 1  species: 2  Examples: Ostrich
+--Order: passeriformes
+--Feature: 
+----Family: turdidae
+----Feature: omnivore
+------genus: 21  species: 171  Examples: blue bird
 
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "y"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "bonnethead shark"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> java.lang.NumberFormatException: For input string: "n"
-1) Add data
-2) Display data
-3) Remove class
-4) Load XML
-5) Write XML
-6) Find feature
-7) Calculate species
-0) Quit
-Choice:> Class: chondrichthyes
+Class: chondrichthyes
 Feature: 
+--Order: carcharhiniformes
+--Feature: 
+----Family: sphyrnidae
+----Feature: dorsal fin, gills, carnivore
+------genus: 2  species: 9  Examples: hammerhead shark, bonnethead shark
 
 
 1) Add data

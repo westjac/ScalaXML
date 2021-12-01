@@ -10,17 +10,17 @@ class Order() extends TaxNode {
   override def loadFile(child: Node): Void = {
     val children = child.child
     for(child <- children) {
-      var tag = child.label
+      var tag = child.label.toLowerCase()
       tag match {
+        case "feature" =>
+          val featureName = child.child.mkString("")
+          features.append(featureName)
         case "family" =>
           val familyName = child.attribute("name").getOrElse("").toString
           val family = new Family()
           family.setNodeName(familyName)
           family.loadFile(child)
           families.append(family)
-        case "feature" =>
-          val featureName = child.child.mkString("")
-          features.append(featureName)
         case _ => null
       }
     }
@@ -28,12 +28,16 @@ class Order() extends TaxNode {
   }
 
   override def saveFile(): Elem = {
-    val xml = families.map(family => family.saveFile())
-    val nodeName = mutable.HashMap(("Name", this.getNodeName()))
+    var xml = ListBuffer[Elem]()
 
     for(feature <- features) {
       xml.append(XMLHelper.makeNode("Feature", null, Text(feature)))
     }
+
+    val familyXML = families.map(family => family.saveFile())
+    val nodeName = mutable.HashMap(("name", this.getNodeName()))
+
+    xml = xml ++ familyXML
     XMLHelper.makeNode("Order", nodeName, xml)
   }
 
