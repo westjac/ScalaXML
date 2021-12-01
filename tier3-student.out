@@ -277,7 +277,7 @@ Choice:> What class:> Removed aves
 6) Find feature
 7) Calculate species
 0) Quit
-Choice:> File name:> Invalid XML File
+Choice:> File name:> Invalid XML file. Needs to be an taxonomy XML file
 
 1) Add data
 2) Display data

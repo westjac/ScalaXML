@@ -363,7 +363,7 @@ Choice:> [34;1m3[0m
 0) Quit
 Choice:> [34;1m4[0m
  File name:> [34;1mtier3_Out.xml[0m
- Invalid XML File
+ Invalid XML file. Needs to be an taxonomy XML file
 
 1) Add data
 2) Display data

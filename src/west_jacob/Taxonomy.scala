@@ -1,5 +1,6 @@
 package west_jacob
 
+import java.io.FileNotFoundException
 import scala.collection.mutable.ListBuffer
 import scala.io
 import scala.xml.{Elem, XML}
@@ -83,24 +84,30 @@ class Taxonomy {
     print("File name:> ")
     val fileName = io.StdIn.readLine()
 
-    val topNode = XML.loadFile(fileName)
-    if(topNode.label != "taxonomy") {
-      println("Invalid XML File")
-    }
-    else {
-      val children = topNode.child
-      for(child <- children) {
-        var tag = child.label
-        tag match {
-          case "class" =>
-            val className = child.attribute("name").getOrElse("").toString
-            val animalClass = new AnimalClass()
-            animalClass.setNodeName(className)
-            animalClass.loadFile(child)
-            animalClasses.append(animalClass)
-          case _ => null
+    try {
+
+
+      val topNode = XML.loadFile(fileName)
+      if (topNode.label != "taxonomy") {
+        println("Invalid XML file. Needs to be an taxonomy XML file")
+      }
+      else {
+        val children = topNode.child
+        for (child <- children) {
+          var tag = child.label
+          tag match {
+            case "class" =>
+              val className = child.attribute("name").getOrElse("").toString
+              val animalClass = new AnimalClass()
+              animalClass.setNodeName(className)
+              animalClass.loadFile(child)
+              animalClasses.append(animalClass)
+            case _ => null
+          }
         }
       }
+    } catch {
+      case e: FileNotFoundException => println("Could not open file: " + e.getMessage)
     }
 
 //    var owner: PetsFunctional = null

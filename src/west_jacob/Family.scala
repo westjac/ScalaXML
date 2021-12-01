@@ -16,8 +16,12 @@ class Family() extends TaxNode{
           val featureName = child.child.mkString("")
           features.append(featureName)
         case "summary" =>
-          summary.genusCount = child.attribute("genus").getOrElse("").toString.toInt
-          summary.speciesCount = child.attribute("species").getOrElse("").toString.toInt
+          val genusCount = child.attribute("genus").getOrElse("").toString
+          summary.genusCount = if(genusCount.forall(Character.isDigit)) genusCount.toInt else 0
+          val speciesCount = child.attribute("species").getOrElse("").toString
+          summary.speciesCount =
+            if(speciesCount.isEmpty) 0
+            else speciesCount.toInt
           summary.examples = child.child.mkString("").split(',').map(_.trim).to[ListBuffer]
         case _ => null
       }
