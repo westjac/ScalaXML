@@ -45,7 +45,7 @@
 //    4. Find feature*	16
 //    CoR format at least there						            X
 //    Prompts correct									                X
-//    First item found and output formatted correctly	______/////////////////////////
+//    First item found and output formatted correctly	X
 //    Handles “not found case”						            X
 //
 //
@@ -54,7 +54,7 @@
 //    Calculated correctly	X
 //    Parallelized*				  X
 //
-//    Every Line with a * has its grading tag: ______//////////////////////////////
+//    Every Line with a * has its grading tag: X
 
 
 package west_jacob

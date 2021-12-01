@@ -103,6 +103,7 @@ class AnimalClass() extends TaxNode {
   }
 
   override def getSpeciesCount(): Int = {
+    //GRADING: PARALLEL
     val sums = orders.par.map(order => {
       order.getSpeciesCount()
     })

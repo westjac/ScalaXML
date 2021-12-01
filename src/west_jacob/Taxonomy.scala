@@ -34,6 +34,7 @@ class Taxonomy {
         newClass.addData()
     }
     else {
+      //GRADING: RDP
       newClass.addData()
     }
 
@@ -42,6 +43,7 @@ class Taxonomy {
   def displayData(): Unit = {
     var data = ""
     for (animalClass <- animalClasses) {
+      //GRADING: PRINT
       data = data + animalClass.displayInfo(0)
       data = data + "\n"
     }
@@ -73,6 +75,7 @@ class Taxonomy {
     print("File name:> ")
     val fileName: String = io.StdIn.readLine()
 
+    //GRADING: WRITE
     val xml = animalClasses.map(animalClass => animalClass.saveFile())
     val tree = XMLHelper.makeNode("Taxonomy", null, xml)
     XML.save(fileName, tree, "UTF-8", true, null)
@@ -99,6 +102,7 @@ class Taxonomy {
               val className = child.attribute("name").getOrElse("").toString
               val animalClass = new AnimalClass()
               animalClass.setNodeName(className)
+              //GRADING: READ
               animalClass.loadFile(child)
               animalClasses.append(animalClass)
             case _ => null
@@ -116,8 +120,10 @@ class Taxonomy {
 
     var tree = ""
     for (animalClass <- animalClasses) {
-      if(tree.isEmpty)
+      if(tree.isEmpty) {
+        //GRADING: FIND
         tree = tree + animalClass.findFeature(featureToFind)
+      }
     }
 
     if (tree.isEmpty) {
