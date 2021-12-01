@@ -9,7 +9,7 @@ class Order() extends TaxNode {
 
   override def loadFile(child: Node): Void = {
     val children = child.child
-    for(child <- children) {
+    for (child <- children) {
       var tag = child.label.toLowerCase()
       tag match {
         case "feature" =>
@@ -30,7 +30,7 @@ class Order() extends TaxNode {
   override def saveFile(): Elem = {
     var xml = ListBuffer[Elem]()
 
-    for(feature <- features) {
+    for (feature <- features) {
       xml.append(XMLHelper.makeNode("Feature", null, Text(feature)))
     }
 
@@ -43,30 +43,30 @@ class Order() extends TaxNode {
 
   override def displayInfo(depth: Int): String = {
     var info = ""
-    info = info + ("--"*depth) + "Order: " + this.getNodeName() + "\n"
-    info = info + ("--"*depth) + "Feature: "
+    info = info + ("--" * depth) + "Order: " + this.getNodeName() + "\n"
+    info = info + ("--" * depth) + "Feature: "
     info = info + features.mkString("", ", ", "")
 
     info = info + "\n"
     //Recurse down
-        for (family <- families) {
-          info = info + family.displayInfo(depth + 1)
-        }
+    for (family <- families) {
+      info = info + family.displayInfo(depth + 1)
+    }
 
     return info
   }
 
   override def findFeature(featureToFind: String): String = {
     var tree = ""
-    for(feature <- features) {
-      if(feature.toLowerCase() == featureToFind) {
+    for (feature <- features) {
+      if (feature.toLowerCase() == featureToFind) {
         tree = tree + this.displayInfo(0)
         return tree
       }
     }
 
     //If the feature was not found, move on
-    for(family <- families) {
+    for (family <- families) {
       tree = tree + family.findFeature(featureToFind)
     }
 
@@ -82,14 +82,14 @@ class Order() extends TaxNode {
     newFamily.setNodeName(familyName)
 
     var familyFound = false
-    for(family <- families) {
-      if(family.getNodeName() == familyName) {
+    for (family <- families) {
+      if (family.getNodeName() == familyName) {
         familyFound = true
         newFamily = family
       }
     }
 
-    if(familyFound == false) {
+    if (familyFound == false) {
       families.append(newFamily)
       print("Added Family\n")
       print("Continue (y/n):> ")

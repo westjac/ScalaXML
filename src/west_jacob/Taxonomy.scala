@@ -17,13 +17,13 @@ class Taxonomy {
     newClass.setNodeName(taxClass.toString)
     //stuff here to add the class to the tree
     var classFound = false
-    for(animalClass <- animalClasses) {
-      if(animalClass.getNodeName() == taxClass) {
+    for (animalClass <- animalClasses) {
+      if (animalClass.getNodeName() == taxClass) {
         classFound = true
         newClass = animalClass
       }
     }
-    if(!classFound) {
+    if (!classFound) {
       animalClasses.append(newClass)
       print("Added Class\n")
       print("Continue (y/n):> ")
@@ -41,8 +41,7 @@ class Taxonomy {
 
   def displayData(): Unit = {
     var data = ""
-    for (animalClass <- animalClasses)
-    {
+    for (animalClass <- animalClasses) {
       data = data + animalClass.displayInfo(0)
       data = data + "\n"
     }
@@ -55,19 +54,19 @@ class Taxonomy {
 
     var classLoc = -1
     var classFound: Boolean = false
-    for(animalClass <- animalClasses) {
+    for (animalClass <- animalClasses) {
       if (animalClass.getNodeName() == className) {
         classFound = true
         classLoc = animalClasses.indexOf(animalClass)
       }
     }
-      if(classFound) {
-        animalClasses.remove(classLoc)
-        print("Removed " + className + "\n")
-      }
-      else {
-        print("Class not found\n")
-      }
+    if (classFound) {
+      animalClasses.remove(classLoc)
+      print("Removed " + className + "\n")
+    }
+    else {
+      print("Class not found\n")
+    }
   }
 
   def writeXML(): Unit = {
@@ -116,11 +115,11 @@ class Taxonomy {
     val featureToFind = io.StdIn.readLine().toLowerCase()
 
     var tree = ""
-    for(animalClass <- animalClasses) {
+    for (animalClass <- animalClasses) {
       tree = tree + animalClass.findFeature(featureToFind)
     }
 
-    if(tree.isEmpty) {
+    if (tree.isEmpty) {
       println(featureToFind + " not found")
     }
     else {
@@ -132,8 +131,8 @@ class Taxonomy {
     print("What class:> ")
     val classToCalc = io.StdIn.readLine().toLowerCase()
     var speciesCount = 0
-    for(animalClass <- animalClasses) {
-      if(animalClass.getNodeName().toLowerCase() == classToCalc) {
+    for (animalClass <- animalClasses) {
+      if (animalClass.getNodeName().toLowerCase() == classToCalc) {
         speciesCount = animalClass.getSpeciesCount()
       }
     }

@@ -7,14 +7,19 @@ abstract class TaxNode() {
   private var nodeName = ""
   var features = new ListBuffer[String]()
 
-  def setNodeName(name : String): Unit ={
+  def setNodeName(name: String): Unit = {
     nodeName = name
   }
 
-  def getNodeName() : String = nodeName
-  def loadFile(child : Node): Void
+  def getNodeName(): String = nodeName
+
+  def loadFile(child: Node): Void
+
   def saveFile(): Elem
+
   def displayInfo(depth: Int): String
-  def findFeature(featureToFind: String) : String
+
+  def findFeature(featureToFind: String): String
+
   def getSpeciesCount(): Int
 }

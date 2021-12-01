@@ -4,12 +4,12 @@ import scala.collection.mutable
 import scala.collection.mutable.ListBuffer
 import scala.xml.{Elem, Node, NodeSeq, Text}
 
-class Family() extends TaxNode{
+class Family() extends TaxNode {
   var summary = new Summary()
 
   override def loadFile(child: Node): Void = {
     val children = child.child
-    for(child <- children) {
+    for (child <- children) {
       var tag = child.label.toLowerCase()
       tag match {
         case "feature" =>
@@ -18,11 +18,11 @@ class Family() extends TaxNode{
         case "summary" =>
           val genusCount = child.attribute("genus").getOrElse("").toString
           summary.genusCount =
-            if(genusCount.isEmpty) 0
+            if (genusCount.isEmpty) 0
             else genusCount.toInt
           val speciesCount = child.attribute("species").getOrElse("").toString
           summary.speciesCount =
-            if(speciesCount.isEmpty) 0
+            if (speciesCount.isEmpty) 0
             else speciesCount.toInt
           summary.examples = child.child.mkString("").split(',').map(_.trim).to[ListBuffer]
         case _ => null
@@ -35,7 +35,7 @@ class Family() extends TaxNode{
     var xmlNodes = ListBuffer[Elem]()
     val nodeName = mutable.HashMap(("name", this.getNodeName()))
 
-    for(feature <- features) {
+    for (feature <- features) {
       xmlNodes.append(XMLHelper.makeNode("Feature", null, Text(feature)))
     }
 
@@ -47,11 +47,11 @@ class Family() extends TaxNode{
 
   override def displayInfo(depth: Int): String = {
     var info = ""
-    info = info + ("--"*depth) + "Family: " + this.getNodeName() + "\n"
-    info = info + ("--"*depth) + "Feature: " + features.mkString("", ", ", "")
+    info = info + ("--" * depth) + "Family: " + this.getNodeName() + "\n"
+    info = info + ("--" * depth) + "Feature: " + features.mkString("", ", ", "")
 
     info = info + "\n"
-    info = info + ("--"*(depth+1)) + "genus: " + summary.genusCount.toString + "  species: " + summary.speciesCount.toString + "  Examples: "
+    info = info + ("--" * (depth + 1)) + "genus: " + summary.genusCount.toString + "  species: " + summary.speciesCount.toString + "  Examples: "
 
     //Print the summary
     info = info + summary.examples.mkString("", ", ", "") + "\n"
@@ -61,8 +61,8 @@ class Family() extends TaxNode{
 
   override def findFeature(featureToFind: String): String = {
     var tree = ""
-    for(feature <- features) {
-      if(feature.toLowerCase() == featureToFind) {
+    for (feature <- features) {
+      if (feature.toLowerCase() == featureToFind) {
         tree = tree + this.displayInfo(0)
         return tree
       }
@@ -76,21 +76,20 @@ class Family() extends TaxNode{
     print("Add Feature (y/n):> ")
     val input = io.StdIn.readLine()
     var continueFeature: String = input.toLowerCase()
-    while(continueFeature != "n")
-      {
-        print("What Feature:> ")
-        val newFeature = io.StdIn.readLine().toLowerCase()
-        features.append(newFeature)
+    while (continueFeature != "n") {
+      print("What Feature:> ")
+      val newFeature = io.StdIn.readLine().toLowerCase()
+      features.append(newFeature)
 
-        print("\nAdd Feature (y/n):> ")
-        val input = io.StdIn.readLine()
-        continueFeature = input.toLowerCase()
-      }
+      print("\nAdd Feature (y/n):> ")
+      val input = io.StdIn.readLine()
+      continueFeature = input.toLowerCase()
+    }
 
     //SUMMARY
     print("Add Summary (y/n):> ")
     val addSummary = io.StdIn.readLine().toLowerCase()
-    if(addSummary == "y") {
+    if (addSummary == "y") {
       print("Update genus count (" + summary.genusCount.toString + "):> ")
       summary.genusCount = io.StdIn.readInt()
 
@@ -100,7 +99,7 @@ class Family() extends TaxNode{
       print("Add example (y/n):> ")
       var addExample = io.StdIn.readLine()
 
-      while(addExample == "y") {
+      while (addExample == "y") {
         print("What example:> ")
         val example = io.StdIn.readLine()
         summary.examples.append(example)
@@ -108,9 +107,7 @@ class Family() extends TaxNode{
         print("Add example (y/n):> ")
         addExample = io.StdIn.readLine()
       }
-
     }
-
   }
 
   //Sub class used only by the family class

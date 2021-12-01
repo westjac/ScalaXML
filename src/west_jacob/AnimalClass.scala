@@ -9,7 +9,7 @@ class AnimalClass() extends TaxNode {
 
   override def loadFile(child: Node): Void = {
     val children = child.child
-    for(child <- children) {
+    for (child <- children) {
       var tag = child.label.toLowerCase()
       tag match {
         case "feature" =>
@@ -30,7 +30,7 @@ class AnimalClass() extends TaxNode {
   override def saveFile(): Elem = {
     var xml = ListBuffer[Elem]()
 
-    for(feature <- features) {
+    for (feature <- features) {
       xml.append(XMLHelper.makeNode("Feature", null, Text(feature)))
     }
 
@@ -43,15 +43,15 @@ class AnimalClass() extends TaxNode {
 
   override def findFeature(featureToFind: String): String = {
     var tree = ""
-    for(feature <- features) {
-      if(feature.toLowerCase() == featureToFind) {
+    for (feature <- features) {
+      if (feature.toLowerCase() == featureToFind) {
         tree = tree + this.displayInfo(0)
         return tree
-        }
       }
+    }
 
     //If the feature was not found, move on
-    for(order <- orders) {
+    for (order <- orders) {
       tree = tree + order.findFeature(featureToFind)
     }
 
@@ -66,13 +66,13 @@ class AnimalClass() extends TaxNode {
     newOrder.setNodeName(orderName)
 
     var orderFound = false
-    for(order <- orders) {
-      if(order.getNodeName() == orderName) {
+    for (order <- orders) {
+      if (order.getNodeName() == orderName) {
         orderFound = true
         newOrder = order
       }
     }
-    if(orderFound == false) {
+    if (orderFound == false) {
       orders.append(newOrder)
       print("Added Order\n")
       print("Continue (y/n):> ")
@@ -83,13 +83,13 @@ class AnimalClass() extends TaxNode {
         newOrder.addData()
     }
     else {
-     newOrder.addData()
+      newOrder.addData()
     }
   }
 
   override def displayInfo(depth: Int): String = {
     var info = ""
-    info = info + "Class: " + this.getNodeName() +"\n"
+    info = info + "Class: " + this.getNodeName() + "\n"
     info = info + "Feature: "
     info = info + features.mkString("", ", ", "")
     info = info + "\n"
