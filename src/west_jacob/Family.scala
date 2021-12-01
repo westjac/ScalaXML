@@ -59,7 +59,18 @@ class Family() extends TaxNode{
     return info
   }
 
-  override def find(): TaxNode = ???
+  override def findFeature(featureToFind: String): String = {
+    var tree = ""
+    for(feature <- features) {
+      if(feature.toLowerCase() == featureToFind) {
+        tree = tree + this.displayInfo(0)
+        return tree
+      }
+    }
+
+    //If the feature was not found, go back, this is the end of the road...
+    return tree
+  }
 
   def addData(): Unit = {
     print("Add Feature (y/n):> ")
@@ -98,7 +109,6 @@ class Family() extends TaxNode{
         addExample = io.StdIn.readLine()
       }
 
-
     }
 
   }
@@ -108,5 +118,9 @@ class Family() extends TaxNode{
     var genusCount: Int = 0;
     var speciesCount: Int = 0;
     var examples = ListBuffer[String]()
+  }
+
+  override def getSpeciesCount(): Int = {
+    return summary.speciesCount
   }
 }

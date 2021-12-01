@@ -56,7 +56,22 @@ class Order() extends TaxNode {
     return info
   }
 
-  override def find(): TaxNode = ???
+  override def findFeature(featureToFind: String): String = {
+    var tree = ""
+    for(feature <- features) {
+      if(feature.toLowerCase() == featureToFind) {
+        tree = tree + this.displayInfo(0)
+        return tree
+      }
+    }
+
+    //If the feature was not found, move on
+    for(family <- families) {
+      tree = tree + family.findFeature(featureToFind)
+    }
+
+    return tree
+  }
 
 
   def addData(): Unit = {
@@ -87,5 +102,14 @@ class Order() extends TaxNode {
     else {
       newFamily.addData()
     }
+  }
+
+  override def getSpeciesCount(): Int = {
+    val sums = families.par.map(family => {
+      family.getSpeciesCount()
+    })
+
+    val total = sums.sum
+    return total
   }
 }

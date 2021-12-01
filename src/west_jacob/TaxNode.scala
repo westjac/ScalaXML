@@ -15,5 +15,6 @@ abstract class TaxNode() {
   def loadFile(child : Node): Void
   def saveFile(): Elem
   def displayInfo(depth: Int): String
-  def find() : TaxNode
+  def findFeature(featureToFind: String) : String
+  def getSpeciesCount(): Int
 }

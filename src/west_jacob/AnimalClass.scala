@@ -41,7 +41,22 @@ class AnimalClass() extends TaxNode {
     XMLHelper.makeNode("Class", nodeName, xml)
   }
 
-  override def find(): TaxNode = ???
+  override def findFeature(featureToFind: String): String = {
+    var tree = ""
+    for(feature <- features) {
+      if(feature.toLowerCase() == featureToFind) {
+        tree = tree + this.displayInfo(0)
+        return tree
+        }
+      }
+
+    //If the feature was not found, move on
+    for(order <- orders) {
+      tree = tree + order.findFeature(featureToFind)
+    }
+
+    return tree
+  }
 
   def addData(): Unit = {
     print("What Order:> ")
@@ -84,5 +99,14 @@ class AnimalClass() extends TaxNode {
       info = info + order.displayInfo(depth + 1)
     }
     return info
+  }
+
+  override def getSpeciesCount(): Int = {
+    val sums = orders.par.map(order => {
+      order.getSpeciesCount()
+    })
+
+    val total = sums.sum
+    return total
   }
 }

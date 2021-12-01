@@ -109,14 +109,35 @@ class Taxonomy {
     } catch {
       case e: FileNotFoundException => println("Could not open file: " + e.getMessage)
     }
+  }
 
-//    var owner: PetsFunctional = null
-//    val topNode = XML.loadFile(name) //XML.loadFile will read in the DOM tree
-//    if (topNode.label != "pets") { //.label is the "tag"
-//      println("invalid xml file")
-//    } else {
-//      owner = PetsFunctional(topNode)
-//    }
-//    return owner
+  def findFeature(): Unit = {
+    print("Feature:> ")
+    val featureToFind = io.StdIn.readLine().toLowerCase()
+
+    var tree = ""
+    for(animalClass <- animalClasses) {
+      tree = tree + animalClass.findFeature(featureToFind)
+    }
+
+    if(tree.isEmpty) {
+      println(featureToFind + " not found")
+    }
+    else {
+      print(tree)
+    }
+  }
+
+  def calculateSpecies(): Unit = {
+    print("What class:> ")
+    val classToCalc = io.StdIn.readLine().toLowerCase()
+    var speciesCount = 0
+    for(animalClass <- animalClasses) {
+      if(animalClass.getNodeName().toLowerCase() == classToCalc) {
+        speciesCount = animalClass.getSpeciesCount()
+      }
+    }
+
+    println("Count: " + speciesCount.toString)
   }
 }
