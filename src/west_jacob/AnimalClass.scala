@@ -52,7 +52,8 @@ class AnimalClass() extends TaxNode {
 
     //If the feature was not found, move on
     for (order <- orders) {
-      tree = tree + order.findFeature(featureToFind)
+      if(tree.isEmpty)
+        tree = tree + order.findFeature(featureToFind)
     }
 
     return tree

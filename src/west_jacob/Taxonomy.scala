@@ -116,7 +116,8 @@ class Taxonomy {
 
     var tree = ""
     for (animalClass <- animalClasses) {
-      tree = tree + animalClass.findFeature(featureToFind)
+      if(tree.isEmpty)
+        tree = tree + animalClass.findFeature(featureToFind)
     }
 
     if (tree.isEmpty) {
@@ -134,9 +135,9 @@ class Taxonomy {
     for (animalClass <- animalClasses) {
       if (animalClass.getNodeName().toLowerCase() == classToCalc) {
         speciesCount = animalClass.getSpeciesCount()
+        println("Count: " + speciesCount.toString)
+        return null
       }
     }
-
-    println("Count: " + speciesCount.toString)
   }
 }

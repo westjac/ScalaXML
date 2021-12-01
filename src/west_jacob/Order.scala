@@ -67,7 +67,8 @@ class Order() extends TaxNode {
 
     //If the feature was not found, move on
     for (family <- families) {
-      tree = tree + family.findFeature(featureToFind)
+      if(tree.isEmpty)
+        tree = tree + family.findFeature(featureToFind)
     }
 
     return tree
